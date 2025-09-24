@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-2 font-family-UI fixed-top">
+  <div class="container-fluid">
+
+    <a class="navbar-brand fw-bold fs-4" routerLink="/">HomeBite</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+        <li class="nav-item">
+          <a class="nav-link fw-medium text-dark" routerLink="/how-it-works">How it works?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-medium text-dark" routerLink="/why-us">Why Us?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-medium text-dark" routerLink="/browse-meal">Browse meal</a>
+        </li>
+      </ul>
+
+      <div class="d-flex gap-3">
+        <a class="btn bgColor-pink rounded-pill px-3 fw-medium text-light" routerLink="/signup">Sign Up</a>
+        <a class="nav-link fw-medium text-dark" routerLink="/become-host">Become a host</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

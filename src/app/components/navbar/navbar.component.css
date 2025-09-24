@@ -1,0 +1,85 @@
+.font-family-UI {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.bg-light-pink {
+    background-color: #ffeae5;
+}
+
+.color-pink {
+    color: #ff6b6b;
+}
+
+.bgColor-pink {
+    background-color: #ff6b6b;
+}
+
+ol {
+    counter-reset: list;
+    list-style: none;
+    padding-left: 0px;
+}
+
+ol li::before {
+    counter-increment: list;
+    content: counter(list);
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.8rem;
+    background-color: #ff5e5e;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.host {
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.home-page {
+    min-height: 93vh;
+}
+
+.container-fluid {
+    padding: 0 1rem;
+}
+
+@media (min-width: 576px) {
+    .container-fluid {
+        padding: 0 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-fluid {
+        padding: 0 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-fluid {
+        padding: 0 5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-fluid {
+        padding: 0 8rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-fluid {
+        padding: 0 170px;
+    }
+}
+
+  

@@ -1,0 +1,300 @@
+.container-fluid {
+    padding: 0 1rem;
+}
+
+@media (min-width: 576px) {
+    .container-fluid {
+        padding: 0 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-fluid {
+        padding: 0 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-fluid {
+        padding: 0 5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-fluid {
+        padding: 0 8rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-fluid {
+        padding: 0 150px;
+    }
+}
+
+.full-bg {
+    position: relative;
+    width: 100%;
+}
+
+/* Background layer now a real div */
+.bg-layer {
+    position: absolute;
+    top: 150px;
+    /* move background down */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* stretch to bottom of parent */
+    background-color: #FFEAE3;
+    border-radius: 3rem;
+    z-index: -1;
+    height: 800px;
+}
+
+/* Margin for content */
+.main {
+    margin-top: 6rem;
+    /* spacing from top */
+}
+
+/* Heading */
+.heading {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+    color: #FF6B6B;
+    margin-bottom: 1.5rem;
+}
+
+/* Paragraph */
+.para {
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: 'Segoe UI';
+    color: #6E6E6E;
+}
+
+/* Image */
+.first-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    .bg-layer {
+        top: 100px;
+        border-radius: 2.5rem;
+    }
+
+    .heading {
+        font-size: 2.8rem;
+    }
+
+    .para {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .bg-layer {
+        top: 80px;
+        border-radius: 2rem;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .para {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .bg-layer {
+        top: 70px;
+        border-radius: 1.8rem;
+    }
+
+    .heading {
+        font-size: 2.2rem;
+    }
+
+    .para {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg-layer {
+        top: 40px;
+        border-radius: 1.5rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .para {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .bg-layer {
+        top: 20px;
+        border-radius: 1rem;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .para {
+        font-size: 0.95rem;
+    }
+}
+
+
+.privacy-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    margin: 0 auto;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.privacy-title {
+    color: #FF6B6B;
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.intro-text {
+    color: #333;
+    font-size: 20px;
+    /* line-height: 20px; */
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.disclaimer-text {
+    color: #333;
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    color: #FF6B6B;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-number {
+    color: #FF6B6B;
+    font-weight: 600;
+}
+
+.section-content {
+    color: #333;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-list li {
+    color: #333;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.info-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.dashed-divider {
+    border: none;
+    border-top: 2px dashed #8B8B8B;
+    margin: 2rem 0;
+}    .two-column-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .two-column-list .info-list {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .two-column-list {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .privacy-title {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 1rem 0.5rem;
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .privacy-title {
+        font-size: 1.35rem;
+    }
+
+    .info-list li {
+        padding-left: 1.25rem;
+    }
+}
