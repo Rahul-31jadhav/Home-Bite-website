@@ -74,74 +74,127 @@
     </div>
   </div>
 </div> -->
+
 <body>
-  <div class="container-fluid signup-container d-flex p-0   ">
-    <div class="row flex-grow-1  g-0">
-      
-      <!-- Left Side: Form -->
-      <div class="col-lg-6 px-0 d-flex align-items-center justify-content-center p-0">
-        <div class="form-box">
-          <div class="d-flex justify-content-between align-items-center mb-0">
-            <h2 class="fw-bold mb-0 font-s">Create your <span>account</span></h2>
-            <button type="button" class="btn-close"></button>
-          </div>
-          <p class="text-muted sub-font-s">Start booking your favorite experiences and get free credits for referring friends.</p>
+    <div class="container-fluid signup-container d-flex p-0   ">
+        <div class="row flex-grow-1  g-0">
 
-          <form>
-            <div class="mb-1">
-                 <label for="firstName" class="form-label lable-font-s">First Name*</label>
-              <input type="text" class="form-control sub-font-s" placeholder="First name*">
-            </div>
-            <div class="mb-1">
-                 <label for="firstName" class="form-label lable-font-s">Last Name*</label>
-              <input type="text" class="form-control sub-font-s" placeholder="Last name*">
-            </div>
-            <div class="mb-1">
-                 <label for="city" class="form-label lable-font-s">Your City*</label>
-              <input type="text" class="form-control sub-font-s" placeholder="Your City*">
-            </div>
-            <div class="mb-1">
-                 <label for="phone" class="form-label lable-font-s">Phone Number*</label>
-              <input type="text" class="form-control sub-font-s" placeholder="Phone number*">
-            </div>
-            <div class="mb-1">
-                 <label for="email" class="form-label lable-font-s">Email Address*</label>
-              <input type="email" class="form-control sub-font-s" placeholder="Email address*">
-            </div>
-            <div class="mb-3">
-                  <label for="password" class="form-label lable-font-s">Password*</label>
-              <input type="password" class="form-control sub-font-s" placeholder="Password*">
-            </div>
-            <div class="d-grid mb-1">
-              <button type="submit" class="btn btn-create text-white py-2">Create</button>
-            </div>
-          </form>
+            <!-- Left Side: Form -->
+            <div class="col-lg-6 px-0 d-flex align-items-center justify-content-center p-0">
+                <div class="form-box">
+                    <div class="d-flex justify-content-between align-items-center mb-0">
+                        <h2 class="fw-bold mb-0 font-s">Create your <span>account</span></h2>
+                        <button type="button" class="btn-close"></button>
+                    </div>
+                    <p class="text-muted sub-font-s">Start booking your favorite experiences and get free credits for
+                        referring friends.</p>
 
-          <div class="text-center mb-2">or</div>
-          <div class="row g-2 mb-3">
-            <div class="col-6">
-              <button class="btn btn-primary social-btn">
-                <i class="bi bi-facebook"></i> Sign Up with Facebook
-              </button>
-            </div>
-            <div class="col-6">
-              <button class="btn btn-outline-primary social-btn">
-                <i class="bi bi-google"></i> Sign Up with Google
-              </button>
-            </div>
-          </div>
+                    <form>
+                        <div class="mb-1">
+                            <label for="firstName" class="form-label lable-font-s">First Name*</label>
+                            <input type="text" class="form-control sub-font-s" placeholder="First name*">
+                        </div>
+                        <div class="mb-1">
+                            <label for="firstName" class="form-label lable-font-s">Last Name*</label>
+                            <input type="text" class="form-control sub-font-s" placeholder="Last name*">
+                        </div>
+                        <div class="mb-1">
+                            <label for="city" class="form-label lable-font-s">Your City*</label>
+                            <input type="text" class="form-control sub-font-s" placeholder="Your City*">
+                        </div>
+                        <div class="mb-1">
+                            <label for="phone" class="form-label lable-font-s">Phone Number*</label>
+                            <input type="text" class="form-control sub-font-s" placeholder="Phone number*">
+                        </div>
+                        <div class="mb-1">
+                            <label for="email" class="form-label lable-font-s">Email Address*</label>
+                            <input type="email" class="form-control sub-font-s" placeholder="Email address*">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label lable-font-s">Password*</label>
+                            <input type="password" class="form-control sub-font-s" placeholder="Password*">
+                        </div>
+                        <div class="d-grid mb-1">
+                            <button type="button" class="btn btn-create text-white py-2" data-bs-toggle="modal"
+                                data-bs-target="#otpModal">
+                                Create
+                            </button>
+                        </div>
+                    </form>
 
-          <hr>
-          <p class="text-center mb-0">Already have an account? <a href="#" class="text-danger">Login now</a></p>
+                    <div class="text-center mb-2">or</div>
+                    <div class="row g-2 mb-3">
+                        <div class="col-6">
+                            <button class="btn btn-primary social-btn">
+                                <i class="bi bi-facebook"></i> Sign Up with Facebook
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-outline-primary social-btn">
+                                <i class="bi bi-google"></i> Sign Up with Google
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <p class="text-center mb-0">Already have an account? <a href="#" class="text-danger">Login now</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Side: Image -->
+            <div class="col-lg-6 px-0 signup-image">
+                <img src="/img/party.svg" alt="Signup Image">
+            </div>
         </div>
-      </div>
+    </div>
 
-      <!-- Right Side: Image -->
-      <div class="col-lg-6 px-0 signup-image">
-        <img src="/img/party.svg" alt="Signup Image">
+    <!-- Bootstrap JS -->
+</body>
+<!-- Modal -->
+<div class="modal fade" id="otpModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+
+      <!-- Modal Body -->
+      <div class="modal-body text-center">
+
+        <!-- Heading -->
+        <span class="opt-font">Verify your phone number</span>
+        <p class="mb-4 otp-sub-font">
+          Please enter a 4-digit verification code that we’ve sent to the number you provided.
+        </p>
+
+        <!-- OTP Box with image inside -->
+        <div class="otp-box position-relative d-inline-block">
+          <div class="d-flex align-items-center justify-content-center">
+            
+            <!-- Example: small phone icon -->
+
+            <!-- OTP Input -->
+            <ng-otp-input 
+              [config]="otpConfig" 
+              (onInputChange)="onOtpChange($event)">
+            </ng-otp-input>
+          </div>
+
+         <div class="mt-3 text-center otp-timer-section">
+    <!-- Countdown -->
+    <p class="mb-1 text-muted otp-small-font">Code expires in 1:57</p>
+
+    <!-- Didn't receive code -->
+    <p class="mb-1 text-muted otp-small-font">Didn’t receive the code?</p>
+
+    <!-- Resend button -->
+   <button type="button" class="btn btn-link p-0 fw-bold resend-btn ">Resend Verification Code</button>
+
+  </div>
+       
+        </div>
+
+        
+
       </div>
     </div>
   </div>
-
-  <!-- Bootstrap JS -->
-</body>
+</div>

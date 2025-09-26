@@ -138,3 +138,76 @@ input.form-control:-webkit-autofill:active {
     box-shadow: 0 0 0px 1000px #fff inset !important;
     transition: background-color 5000s ease-in-out 0s;
 }
+
+.otp-box {
+  padding: 15px;
+  display: inline-block;
+}
+
+.otp-box button.btn-link {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+ng-otp-input input {
+  text-align: center;
+  font-weight: bold;
+}
+::ng-deep .otp-input {
+  width: 54px !important;
+  height: 48px !important;
+  margin: 0 5px !important;
+  font-size: 20px !important;
+  border-radius: 10px !important;
+  border: 1px solid #ced4da !important;
+
+  text-align: center;       
+  line-height: 48px;        
+
+  padding-right: 2px;
+  cursor: text;
+
+  background: url("/img/Input.svg") no-repeat center;
+  background-size: 6px 14px;
+}
+
+::ng-deep .otp-input:not(:placeholder-shown) {
+  background: none;
+}
+
+.opt-font{
+ font-family: 'Segoe UI';
+ font-size: 40px;
+ font-weight: 600;
+ color: #2B2B2B;
+  white-space: nowrap;
+}
+.otp-sub-font{
+    font-family: 'Segoe UI';
+ font-size: 20px;
+ font-weight: 400;
+ color: #2B2B2B;
+}
+.modal-dialog {
+  max-width: 600px;
+}
+.resend-btn {
+      font-family: 'Segoe UI' !important;
+      font-weight: 600;
+  color: #FF6B6B;         
+  font-size: 12px !important;    
+  text-decoration: underline !important;
+}
+
+.resend-btn:hover {
+  color: #FF6B6B;        
+   font-size:12px;   
+  text-decoration: underline;
+}
+.otp-small-font{
+     font-family: 'Segoe UI';
+ font-size: 12px;
+ font-weight: 600;
+ color: #8B8B8B;
+
+}
