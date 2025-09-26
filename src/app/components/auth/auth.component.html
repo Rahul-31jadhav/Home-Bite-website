@@ -1,0 +1,147 @@
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-2 font-family-UI fixed-top">
+    <div class="container-fluid">
+
+        <a class="navbar-brand " routerLink="/">
+            <img src="img/home-logo.svg" alt="HomeBite" height="30">
+        </a>
+    </div>
+
+</nav>
+<!-- <div class="container-fluid signup-container">
+  <div class="row g-0">
+    <div class="col-lg-6 d-flex align-items-center justify-content-center main-form">
+      <div class="card ">
+        <h2 class="mb-1">Create Your <span class="text-danger">Account</span></h2>
+        <small class="mb-4 d-block">Please fill in the form to create an account.</small>
+        <form>
+          <div class="mb-2">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="John">
+          </div>
+          <div class="mb-2">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Doe">
+          </div>
+          <div class="mb-2">
+            <label for="city" class="form-label">City</label>
+            <input type="text" class="form-control" id="city" placeholder="Your City">
+          </div>
+          <div class="mb-2">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" placeholder="+91 1234567890">
+          </div>
+          <div class="mb-2">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="example@email.com">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter password">
+          </div>
+          <div class="d-grid mb-2">
+            <button type="submit" class="btn btn-lg login-btn">Login</button>
+          </div>
+          <p class="d-flex justify-content-center">Or</p>
+
+          <div class="d-flex flex-column flex-md-row justify-content-between gap-3 mb-2">
+            <button type="button"
+              class="btn w-100 facebook-btn d-flex align-items-center justify-content-center">
+              <img src="img/Facebook.svg" alt="Facebook" style="margin-right: 8px;">
+              Login with Facebook
+            </button>
+
+            <button type="button"
+              class="btn w-100 google-btn d-flex align-items-center justify-content-center">
+              <img src="img/google.svg" alt="Google" style="margin-right: 8px;">
+              Login with Google
+            </button>
+          </div>
+          <hr class="my-3">
+
+          <div class="text-start">
+            <p class="small mb-0"
+              style="font-size: 16px; font-family: 'Segoe UI'; font-weight: 600; color: #2B2B2B;">
+              Don’t have an account?
+              <a href="#" class="fw-semibold text-decoration-none signup-link">Sign Up</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-lg-6 signup-image">
+      <img src="/img/logside.svg" alt="">
+    </div>
+  </div>
+</div> -->
+<body>
+  <div class="container-fluid signup-container d-flex p-0   ">
+    <div class="row flex-grow-1  g-0">
+      
+      <!-- Left Side: Form -->
+      <div class="col-lg-6 px-0 d-flex align-items-center justify-content-center p-0">
+        <div class="form-box">
+          <div class="d-flex justify-content-between align-items-center mb-0">
+            <h2 class="fw-bold mb-0 font-s">Create your <span>account</span></h2>
+            <button type="button" class="btn-close"></button>
+          </div>
+          <p class="text-muted sub-font-s">Start booking your favorite experiences and get free credits for referring friends.</p>
+
+          <form>
+            <div class="mb-1">
+                 <label for="firstName" class="form-label lable-font-s">First Name*</label>
+              <input type="text" class="form-control sub-font-s" placeholder="First name*">
+            </div>
+            <div class="mb-1">
+                 <label for="firstName" class="form-label lable-font-s">Last Name*</label>
+              <input type="text" class="form-control sub-font-s" placeholder="Last name*">
+            </div>
+            <div class="mb-1">
+                 <label for="city" class="form-label lable-font-s">Your City*</label>
+              <input type="text" class="form-control sub-font-s" placeholder="Your City*">
+            </div>
+            <div class="mb-1">
+                 <label for="phone" class="form-label lable-font-s">Phone Number*</label>
+              <input type="text" class="form-control sub-font-s" placeholder="Phone number*">
+            </div>
+            <div class="mb-1">
+                 <label for="email" class="form-label lable-font-s">Email Address*</label>
+              <input type="email" class="form-control sub-font-s" placeholder="Email address*">
+            </div>
+            <div class="mb-3">
+                  <label for="password" class="form-label lable-font-s">Password*</label>
+              <input type="password" class="form-control sub-font-s" placeholder="Password*">
+            </div>
+            <div class="d-grid mb-1">
+              <button type="submit" class="btn btn-create text-white py-2">Create</button>
+            </div>
+          </form>
+
+          <div class="text-center mb-2">or</div>
+          <div class="row g-2 mb-3">
+            <div class="col-6">
+              <button class="btn btn-primary social-btn">
+                <i class="bi bi-facebook"></i> Sign Up with Facebook
+              </button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-outline-primary social-btn">
+                <i class="bi bi-google"></i> Sign Up with Google
+              </button>
+            </div>
+          </div>
+
+          <hr>
+          <p class="text-center mb-0">Already have an account? <a href="#" class="text-danger">Login now</a></p>
+        </div>
+      </div>
+
+      <!-- Right Side: Image -->
+      <div class="col-lg-6 px-0 signup-image">
+        <img src="/img/party.svg" alt="Signup Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+</body>

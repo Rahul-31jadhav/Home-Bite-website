@@ -1,30 +1,110 @@
 <nav class="navbar navbar-expand-lg bg-white shadow-sm py-2 font-family-UI fixed-top">
-  <div class="container-fluid">
+    <div class="container-fluid">
 
-    <a class="navbar-brand fw-bold fs-4" routerLink="/">HomeBite</a>
+        <a class="navbar-brand" routerLink="/">
+            <img src="img/home-logo.svg" alt="HomeBite" height="30">
+        </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
-        <li class="nav-item">
-          <a class="nav-link fw-medium text-dark" routerLink="/how-it-works">How it works?</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-medium text-dark" routerLink="/why-us">Why Us?</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-medium text-dark" routerLink="/browse-meal">Browse meal</a>
-        </li>
-      </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="d-flex gap-3">
-        <a class="btn bgColor-pink rounded-pill px-3 fw-medium text-light" routerLink="/signup">Sign Up</a>
-        <a class="nav-link fw-medium text-dark" routerLink="/become-host">Become a host</a>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+                <li class="nav-item">
+                    <a class="nav-link fw-medium text-dark" routerLink="/how-it-works">How it works?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-medium text-dark" routerLink="/why-us">Why Us?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-medium text-dark" routerLink="/browse-meal">Browse meal</a>
+                </li>
+            </ul>
+
+            <div class="d-flex gap-3">
+                <!-- Sign Up Button to trigger modal -->
+                <a class="btn bgColor-pink rounded-pill px-3 fw-medium text-light" href="#" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">
+                    Sign Up
+                </a>
+
+                <a class="nav-link fw-medium text-dark" routerLink="/become-host">Become a host</a>
+            </div>
+        </div>
     </div>
-  </div>
 </nav>
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content p-3 rounded-4 shadow">
+
+            <div class="modal-header border-0"
+                style="font-size: 20px; font-family: 'Segoe UI';font-weight: 600;color: #000;">
+                <h5 class="modal-title fw-bold" id="loginModalLabel">Welcome Back</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-semibold"
+                            style="font-size: 18px; font-family: 'Segoe UI';font-weight: 600;color: #2B2B2B;">Email</label>
+                        <input type="email" class="form-control form-control-lg" id="email"
+                            placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label fw-semibold"
+                            style="font-size: 18px; font-family: 'Segoe UI';font-weight: 600;color: #2B2B2B;">Password</label>
+                        <input type="password" class="form-control form-control-lg" id="password"
+                            placeholder="Enter your password">
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="form-check small">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <a href="#" class="text-decoration-none small"
+                            style="color: #FF6B6B;font-weight: 700;font-family: 'Segoe UI';">Forgot password?</a>
+                    </div>
+
+                    <div class="d-grid mb-3">
+                        <button type="submit" class="btn btn-lg login-btn">Login</button>
+                    </div>
+                    <p class="d-flex justify-content-center">Or</p>
+
+                    <div class="d-flex justify-content-between gap-3 mb-3">
+                        <button type="button"
+                            class="btn w-50 facebook-btn d-flex align-items-center justify-content-center ">
+                            <img src="img/Facebook.svg" alt="Facebook" style="margin-right: 8px;">
+                            Login with Facebook
+                        </button>
+
+                        <button type="button"
+                            class="btn w-50 google-btn d-flex align-items-center justify-content-center">
+                            <img src="img/google.svg" alt="Google" style=" margin-right: 8px;">
+                            Login with Google
+                        </button>
+                    </div>
+                    <hr class="my-3">
+
+                    <div class="text-start">
+                        <p class="small mb-0"
+                            style="font-size: 18px; font-family: 'Segoe UI';font-weight: 600;color: #2B2B2B;">
+                            Don’t have an account?
+                            <a href="#" class="fw-semibold text-decoration-none signup-link">Sign Up</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 <router-outlet></router-outlet>

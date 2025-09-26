@@ -5,6 +5,7 @@ import { FoodbookingComponent } from './components/foodbooking/foodbooking.compo
 import { TestComponent } from './components/test/test.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AuthComponent } from './components/auth/auth.component';
 
 export const routes: Routes = [
   {
@@ -17,6 +18,7 @@ export const routes: Routes = [
 
     ]
   },
+  {path:'auth',component:AuthComponent},
   {path:'footer',component:FooterComponent},
    {path:'test',component: TestComponent},
   {path:'foodbooking',component:FoodbookingComponent},

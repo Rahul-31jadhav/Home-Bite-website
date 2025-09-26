@@ -82,4 +82,94 @@ html {
     }
 }
 
-  
+
+
+.modal-content {
+    width: 85%;
+}
+
+.form-control:focus {
+    background-color: #fff !important;
+    border-color: #2B2B2B !important;
+    box-shadow: none !important;
+}
+
+input.form-control:-webkit-autofill,
+input.form-control:-webkit-autofill:hover,
+input.form-control:-webkit-autofill:focus,
+input.form-control:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+    -webkit-text-fill-color: #2B2B2B !important;
+    box-shadow: 0 0 0px 1000px #fff inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-control {
+    font-size: 14px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2B2B2B;
+}
+
+/* If using large inputs */
+.form-control-lg {
+    font-size: 14px;
+}
+
+.form-check-input:checked {
+    background-color: #FF6B6B !important;
+    /* Checkbox fill color */
+    border-color: #FF6B6B !important;
+    /* Checkbox border */
+}
+
+/* Optional: remove Bootstrap focus glow */
+.form-check-input:focus {
+    box-shadow: none !important;
+    border-color: #FF6B6B !important;
+}
+
+.login-btn {
+    background-color: #FF6B6B;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+}
+
+
+.login-btn:focus {
+    box-shadow: none;
+}
+
+.google-btn {
+    background-color: #4285F4;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+}
+
+
+.google-btn:focus {
+    box-shadow: none;
+}
+
+.facebook-btn {
+    background-color: #4460A0;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+}
+
+
+.facebook-btn:focus {
+    box-shadow: none;
+}
+
+.signup-link {
+    color: #FF6B6B;
+    /* Your custom color */
+}
+
+.signup-link:hover {
+    color: #e85a5a;
+    /* Slightly darker on hover */
+}

@@ -1,32 +1,90 @@
-<div class="container-fluid my-5 py-3 ps-5">
-  <div class="row">
-    <!-- LEFT (meal info + comments together) -->
-    <div class="col-lg-6 col-md-12 mb-4">
-      <div class="meal-info bg-light p-4 mb-4">
-        <p>Lots of meal info text here...</p>
-        <p>Keep adding content to make it tall...</p>
-        <p>Scroll down to see sticky card effect...</p>
-        <p style="height: 600px;"></p>
-      </div>
-
-      <!-- COMMENTS INSIDE LEFT SIDE -->
-      <div class="comments bg-secondary text-white p-4">
-        <h4>Comments</h4>
-        <p>Once you reach here, sticky card is still visible.</p>
-        <p style="height: 600px;">More comments content...</p>
-      </div>
-    </div>
-
-    <!-- RIGHT (sticky booking card) -->
-    <div class="col-lg-4 col-md-12">
-      <div class="booking-wrapper">
-        <div class="card-booking p-4 bg-warning">
-          <h4>Booking Card</h4>
-          <p>This card stays sticky while you scroll meal info + comments</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="text-center mt-5">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+        Sign Up
+    </button>
 </div>
 
-  
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- increased width -->
+        <div class="modal-content p-4 rounded-4 shadow">
+
+            <!-- Modal Header -->
+            <!-- Modal Header -->
+            <div class="modal-header border-0"
+                style="font-size: 20px; font-family: 'Segoe UI';font-weight: 600;color: #000;">
+                <h5 class="modal-title fw-bold" id="loginModalLabel">Welcome Back</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <form>
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-semibold"
+                            style="font-size: 18px; font-family: 'Segoe UI';font-weight: 600;color: #2B2B2B;">Email</label>
+                        <input type="email" class="form-control form-control-lg" id="email"
+                            placeholder="Enter your email">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="mb-3">
+                        <label for="password" class="form-label fw-semibold"
+                            style="font-size: 18px; font-family: 'Segoe UI';font-weight: 600;color: #2B2B2B;">Password</label>
+                        <input type="password" class="form-control form-control-lg" id="password"
+                            placeholder="Enter your password">
+                    </div>
+
+                    <!-- Remember + Forgot Password -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="form-check small">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <a href="#" class="text-decoration-none small"
+                            style="color: #FF6B6B;font-weight: 700;font-family: 'Segoe UI';">Forgot password?</a>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="d-grid mb-3">
+                        <button type="submit" class="btn btn-lg login-btn">Login</button>
+                    </div>
+                    <p class="d-flex justify-content-center">Or</p>
+
+                    <!-- Social Login Buttons -->
+                    <div class="d-flex justify-content-between gap-3 mb-3">
+                        <!-- Facebook Button -->
+                        <button type="button"
+                            class="btn w-50 facebook-btn d-flex align-items-center justify-content-center ">
+                            <img src="img/Facebook.svg" alt="Facebook"
+                             style="margin-right: 8px;"
+                               >
+                            Login with Facebook
+                        </button>
+
+                        <!-- Google Button -->
+                        <button type="button"
+                            class="btn w-50 google-btn d-flex align-items-center justify-content-center">
+                            <img src="img/google.svg" alt="Google"
+                                style=" margin-right: 8px;">
+                            Login with Google
+                        </button>
+                    </div>
+                    <hr class="my-3">
+
+                    <!-- Account Text -->
+                    <div class="text-start">
+                        <p class="small mb-0"
+                            style="font-size: 18px; font-family: 'Segoe UI';font-weight: 600;color: #2B2B2B;">
+                            Don’t have an account?
+                            <a href="#" class="fw-semibold text-decoration-none signup-link">Sign Up</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

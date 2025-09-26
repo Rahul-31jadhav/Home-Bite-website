@@ -1,0 +1,140 @@
+
+.navbar-brand{
+    margin-left: 7rem;
+}
+ body, html {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; 
+}
+
+.signup-container {
+  min-height: 100vh;      
+  display: flex;
+  align-items: flex-start; 
+  justify-content: center; 
+  padding-top: 20px;     
+  overflow-y: auto;    
+}
+
+.form-box {
+  width: 100%;
+  max-width: 650px;   
+  min-width: 300px;   
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center;
+}
+
+.form-box h2 span {
+  color: #e74c3c;
+}
+
+.btn-create {
+  background-color: #ff6b6b;
+  border: none;
+}
+
+.btn-create:hover {
+  background-color: #ff5252;
+}
+
+.social-btn {
+  width: 100%;
+}
+
+.signup-image {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.signup-image img {
+  width: auto;       
+  position: relative;
+  left: 20%;          
+  max-width: none;
+  padding-top: 3.2rem;
+
+}
+
+
+
+@media (min-width: 1400px) {
+  .form-box {
+    max-width: 750px;
+    margin-left: 20%;  
+     margin-top: 3rem;
+    
+
+  }
+  .signup-image img {
+  left: 17%;
+ width: -webkit-fill-available;
+    
+  }
+}
+
+/* Medium & small laptops */
+@media (max-width: 1199px) {
+  .form-box {
+    max-width: 550px;
+    margin-left: 10%;   
+        margin-top: 2rem;
+  }
+  .signup-image img {
+    left: 15%;
+    
+  }
+}
+
+/* Tablets & Mobile */
+@media (max-width: 991px) {
+  .signup-image {
+    display: none;      
+  }
+  .signup-container {
+    align-items: center;  
+    justify-content: flex-start; 
+    padding-top: 20px;
+        /* margin-top: 2rem; */
+  }
+  .form-box {
+    max-width: 90%;
+    margin-left: 0;
+    padding: 20px;
+        margin-top: 3rem;
+  }
+}
+ .font-s{
+    font-size: 24px;
+font-family: 'Segoe UI';
+font-weight: 600;
+
+ }
+ .sub-font-s{
+    font-size: 14px;
+font-family: 'Segoe UI';
+font-weight:400;
+color: #8B8B8B;
+ }
+ .lable-font-s{
+    font-size: 18px;
+font-family: 'Segoe UI';
+font-weight:600;
+color: #2B2B2B;
+ }
+ input.form-control:-webkit-autofill,
+input.form-control:-webkit-autofill:hover,
+input.form-control:-webkit-autofill:focus,
+input.form-control:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+    -webkit-text-fill-color: #2B2B2B !important;
+    box-shadow: 0 0 0px 1000px #fff inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
