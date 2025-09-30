@@ -1,5 +1,12 @@
+.home-p-font{
+    font-family: 'Segoe UI';
+    
+
+
+}
+
 .font-family-UI {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI';
 }
 
 .bg-light-pink {
@@ -110,7 +117,7 @@ html {
    .heading-font{
      font-family: 'Segoe UI';
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 550;
     color: #2B2B2B;
 
    }
@@ -133,4 +140,123 @@ html {
 
 .meals-section > * {
   position: relative;
+}
+/* Tablets & Mobile view adjustments */
+@media (max-width: 991px) {
+  /* Hide background and phone image */
+  .meals-section::before {
+    display: none;
+  }
+  .img-div > img {
+    display: none !important;
+  }
+
+  .img-div .d-flex,
+  .first-img .d-flex {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 0 !important;
+  }
+
+  .img-div .d-flex > div:first-child,
+  .first-img .d-flex > div:first-child {
+    flex: 0 0 50px;   
+    max-width: 50px;
+  }
+
+  .img-div img,
+  .first-img img {
+    max-width: 40px;
+    height: auto;
+  }
+
+  .img-div .d-flex > div:last-child,
+  .first-img .d-flex > div:last-child {
+    flex: 1;
+  }
+
+  .heading-font {
+    font-size: 20px !important;
+  }
+  .font-fam {
+    font-size: 14px !important;
+  }
+
+  .ms-5 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+/* Small laptops: 992px to 1024px */
+@media (min-width: 992px) and (max-width: 1024px) {
+  .first-img .d-flex,
+  .img-div {
+    flex-direction: row;      
+    flex-wrap: nowrap;        
+    align-items: flex-start;  
+    justify-content: flex-end; 
+    gap: 1rem;              
+  }
+
+  /* Main phone image on left */
+  .img-div:first-child {
+    order: 1;                 
+  }
+
+  .img-div:not(:first-child) {
+    order: 2;                 
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+
+  /* Adjust main phone image */
+  .img-div:first-child > img {
+    max-width: 180px;    
+    height: auto;
+  }
+
+  /* Adjust step icons */
+  .first-img img,
+  .img-div:not(:first-child) img {
+    max-width: 385px;        
+    height: auto;
+  }
+
+  /* Text adjustments */
+  .heading-font {
+    font-size: 24px;         
+  }
+
+  .font-fam {
+    font-size: 16px;          
+  }
+
+  /* Reduce padding/margin */
+  .ms-5,
+  .ps-5,
+  .me-3,
+  .p-3 {
+    margin: 0 !important;
+    padding: 0.5rem !important;
+  }
+}
+
+
+
+
+
+
+
+/* Aimation */
+/* Only applies to the image with class 'floating-img' */
+@keyframes floatUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.floating-img {
+  animation: floatUpDown 4s ease-in-out infinite;
 }

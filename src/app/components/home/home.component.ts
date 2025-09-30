@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 
 @Component({
@@ -9,8 +9,47 @@ import { FooterComponent } from '../footer/footer.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
   navOpen = false;
+    constructor(private el: ElementRef) {}
+
+  ngAfterViewInit(): void {
+    const counters: NodeListOf<HTMLElement> = this.el.nativeElement.querySelectorAll('.counter');
+
+    // Create observer
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.animateCounter(entry.target as HTMLElement);
+          obs.unobserve(entry.target); // run once per element
+        }
+      });
+    }, { threshold: 0.5 }); // 50% visible
+
+    counters.forEach(counter => observer.observe(counter));
+  }
+
+  private animateCounter(counter: HTMLElement) {
+    const target = +counter.getAttribute('data-target')!;
+    const suffix = counter.getAttribute('data-suffix') || '';
+    let count = 0;
+
+    const increment = target / 150; // adjust speed
+
+    const updateCount = () => {
+      if (count < target) {
+        count += increment;
+        counter.innerText = Math.ceil(count).toLocaleString() + suffix;
+        requestAnimationFrame(updateCount);
+      } else {
+        counter.innerText = target.toLocaleString() + suffix;
+      }
+    };
+
+    updateCount();
+  }
+
+  
 
   toggleNav() {
     this.navOpen = !this.navOpen;
@@ -128,5 +167,7 @@ export class HomeComponent {
       lastOrder: '02:00 PM (Tomorrow)'
     },
   ];
+
+
 
 }

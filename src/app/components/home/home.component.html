@@ -42,7 +42,7 @@
       </h1>
       <h3 class="text-muted fs-4 fs-lg-2" style="color: #6E6E6E;">From Local Home Chefs</h3>
       <p class="text-muted fs-6 fs-lg-5">
-        Discover homemade flavors near you – takeaway,<br class="d-none d-lg-block">
+        Discover homemade flavors near you – takeaway,
         dine-in or get delivered by the host. Experience<br class="d-none d-lg-block">
         authentic cuisine crafted with love in local kitchens.
       </p>
@@ -56,8 +56,9 @@
 
     <!-- Image Content -->
     <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
-      <img src="img/home.svg" alt="Chef Cooking" class="img-fluid" />
+      <img src="img/home.svg" alt="Chef Cooking" class="img-fluid floating-img" />
     </div>
+
 
   </div>
 </div>
@@ -91,17 +92,22 @@
         <!-- Stats Cards -->
         <div class="d-flex flex-wrap gap-1 gap-xl-4 mb-4 justify-content-center justify-content-lg-start">
           <div class="card shadow-sm p-2 ps-3" style="width: 13rem; background-color: #FFF4EC;">
-            <img src="img/users.svg" class="my-2 mx-auto mx-lg-0" alt="users-icon" width="42" height="42">
-            <div class="fw-bold fs-5 text-dark text-center text-sm-start">2500+</div>
+           <img src="img/users.svg" class="my-2 mx-auto mx-lg-0 floating-img" alt="users-icon" width="42" height="42">
+            <!-- Animated counter -->
+            <div class="fw-bold fs-5 text-dark text-center text-sm-start counter" [attr.data-target]="2500"
+              [attr.data-suffix]="'+'">0</div>
             <div class="text-muted fs-6 text-center text-sm-start">Happy Customers</div>
           </div>
 
           <div class="card shadow-sm p-2 ps-3" style="width: 13rem; background-color: #FFF0F0;">
-            <img src="img/chef.svg" class="my-2 mx-auto mx-lg-0" alt="chef-icon" width="42" height="42">
-            <div class="fw-bold fs-5 text-dark text-center text-sm-start">150+</div>
+           <img src="img/chef.svg" class="my-2 mx-auto mx-lg-0 floating-img" alt="chef-icon" width="42" height="42">
+            <!-- Animated counter -->
+            <div class="fw-bold fs-5 text-dark text-center text-sm-start counter" [attr.data-target]="150"
+              [attr.data-suffix]="'+'">0</div>
             <div class="text-muted fs-6 text-center text-sm-start">Verified Home Chefs</div>
           </div>
         </div>
+
 
         <!-- Button -->
         <div class="text-center text-xxl-start w-100"><button
@@ -128,12 +134,11 @@
   </div>
   <div class="first-img">
     <div class="d-flex mb-4">
-      <div class="me-3 d-flex align-items-center justify-content-center bg-opacity-10 rounded p-3"
-        style=" margin-left: 13rem;">
-        <img src="img/meal.svg" alt="meal">
+      <div class="me-3 d-flex  p-3" style=" margin-left: 18rem;">
+        <img class="floating-img" src="img/meal.svg" alt="meal">
       </div>
       <div>
-        <h5 class="fw-bold heading-font">Browse Meals</h5>
+        <h5 class="heading-font">Browse Meals</h5>
         <p class="text-muted mb-0 font-fam">
           Discover a variety of authentic dishes from verified home chefs in your<br>
           area, offering the flavors of home-cooked meals.
@@ -143,14 +148,14 @@
   </div>
   <div class="img-div d-flex ">
 
-    <img src="img/mobile.svg" alt="phone">
+    <img class="img-fluid" src="img/mobile.svg" alt="phone">
     <div>
       <div class="d-flex mb-5">
-        <div class="me-3 d-flex align-items-center justify-content-center bg-opacity-10 rounded p-3">
-          <img src="img/dining.svg" alt="dining">
+        <div class="me-3 d-flex p-3">
+          <img class="floating-img" src="img/dining.svg" alt="dining">
         </div>
         <div>
-          <h5 class="fw-bold heading-font">Choose Dining Option</h5>
+          <h5 class="heading-font">Choose Dining Option</h5>
           <p class="text-muted mb-0 font-fam">
             Select takeaway, dine-in at the host's place, or have your meals delivered
             <br>to your home for maximum convenience.
@@ -159,11 +164,11 @@
       </div>
       <div class="ms-5 ps-5">
         <div class="d-flex mb-5">
-          <div class="me-3 d-flex align-items-center justify-content-center  bg-opacity-10 rounded p-3">
-            <img src="img/secure.svg" alt="secure">
+          <div class="me-3 d-flex p-3">
+            <img class="floating-img" src="img/secure.svg" alt="secure">
           </div>
           <div>
-            <h5 class="fw-bold heading-font">Secure Payment</h5>
+            <h5 class="heading-font">Secure Payment</h5>
             <p class="text-muted mb-0 font-fam">
               Pay safely and securely using multiple payment options through our reliable platform.
             </p>
@@ -171,8 +176,8 @@
         </div>
 
         <div class="d-flex">
-          <div class="me-3 d-flex align-items-center justify-content-center  bg-opacity-10 rounded p-3">
-            <img src="img/enjoy.svg" alt="enjoy">
+          <div class="me-3 d-flex   p-3">
+            <img class="floating-img" src="img/enjoy.svg" alt="enjoy">
           </div>
           <div>
             <h5 class="heading-font">Enjoy Your Meal</h5>
@@ -284,27 +289,27 @@
 
   <div class="row text-center mb-3">
     <div class="col-6 col-md-3 mb-4">
-      <img src="img/fresh.svg" width="60" class="mb-2" alt="Fresh Icon" />
+      <img src="img/fresh.svg" width="60" class="mb-2 floating-img" alt="Fresh Icon" />
       <h5 class="fw-semibold">Authentic & fresh</h5>
       <p class="text-muted small fs-6">Made with love using fresh,<br> local ingredients by passionate <br> home
         chefs.
       </p>
     </div>
     <div class="col-6 col-md-3 mb-4">
-      <img src="img/verify.svg" width="60" class="mb-2" alt="Verified Icon" />
+      <img src="img/verify.svg" width="60" class="mb-2 floating-img" alt="Verified Icon" />
       <h5 class="fw-semibold">Verified Chefs</h5>
       <p class="text-muted small fs-6">All our chefs undergo thorough <br> verification and food safety <br>training.
       </p>
     </div>
     <div class="col-6 col-md-3 mb-4">
-      <img src="img/flexible.svg" width="60" class="mb-2" alt="Delivery Icon" />
+      <img src="img/flexible.svg" width="60" class="mb-2 floating-img" alt="Delivery Icon" />
       <h5 class="fw-semibold">Flexible Options</h5>
       <p class="text-muted small fs-6">Choose from takeaway, dine-in <br> experiences, or convenient <br>home
         delivery.
       </p>
     </div>
     <div class="col-6 col-md-3 mb-4">
-      <img src="img/secure-payment.svg" width="60" class="mb-2" alt="Secure Icon" />
+      <img src="img/secure-payment.svg" width="60" class="mb-2 floating-img" alt="Secure Icon" />
       <h5 class="fw-semibold">Secure Payments</h5>
       <p class="text-muted small fs-6">Safe and secure payment <br> processing with buyer <br> protection guarantee.
       </p>
@@ -322,22 +327,23 @@
 
         <div class="row text-center text-md-start">
           <div class="col-6 align-items-center">
-            <h4 class="text-danger fw-semibold">150+</h4>
+            <h4 class="text-danger fw-semibold counter" [attr.data-target]="150" [attr.data-suffix]="'+'">0</h4>
             <span class="small text-muted fs-6">Active Home Chefs</span>
           </div>
           <div class="col-6">
-            <h4 class="text-primary fw-semibold">50k+</h4>
+            <h4 class="text-primary fw-semibold counter" [attr.data-target]="50000" [attr.data-suffix]="'k+'">0</h4>
             <span class="small text-muted fs-6">Happy Customers</span>
           </div>
           <div class="col-6">
-            <h4 class="text-warning fw-semibold">100k+</h4>
+            <h4 class="text-warning fw-semibold counter" [attr.data-target]="100000" [attr.data-suffix]="'+'">0</h4>
             <span class="small text-muted fs-6">Active Home Chefs</span>
           </div>
           <div class="col-6">
-            <h4 class="text-success fw-semibold">15+</h4>
+            <h4 class="text-success fw-semibold counter" [attr.data-target]="15" [attr.data-suffix]="'+'">0</h4>
             <span class="small text-muted fs-6">50+ Cities</span>
           </div>
         </div>
+
       </div>
 
       <div class="col-md-3 d-sm-block">
